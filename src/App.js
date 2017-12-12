@@ -12,7 +12,7 @@ class App extends Component {
       todos: [
         {id: 0, text: "Go to grocery store"},
         {id: 1, text: "Do Laundry"},
-        {id: 2, tet: "Do a new coding project"}
+        {id: 2, text: "Do a new coding project"}
       ],
       nextId: 3
     }
@@ -22,7 +22,12 @@ class App extends Component {
   }
 
   addTodo(todoText) {
-    console.log("Todo added", todoText);
+    let todos = this.state.todos.slice();
+    todos.push({id: this.state.nextId, text: todoText});
+    this.setState({
+      todos: todos,
+      nextId: ++this.state.nextId
+    })
   }
 
   removeTodo(id) {
