@@ -38,6 +38,7 @@ class App extends Component {
 
   render() {
     return (
+      // Move Header to the top so when i have multiple lists there won't be a header for each of them
       <div className="App">
         <div className="todo-wrapper wrap1 container">
           <Header />
@@ -55,6 +56,7 @@ class App extends Component {
             })}
           </ul>
         </div>
+        {/* this will be the blueprint for my next todo list */}
         {/* <div className="todo-wrapper wrap2 container">
           <Header />
           <TodoInput todoText="" addTodo={this.addTodo} />
