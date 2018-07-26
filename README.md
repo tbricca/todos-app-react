@@ -20,7 +20,7 @@ Users can add to the list and delete items from it. Aimed to create an app to re
 
 ## Updated View
 
-(images/ToDos.png)
+![Updated View](images/ToDos.png)
 
 ## Next Steps
 
